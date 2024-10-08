@@ -1,0 +1,7 @@
+C:\Users\carlos.esccavaletto\source\repos\TI46ProjetosConsole2\TI46ProjetosConsole2\obj\Debug\TI46ProjetosConsole2.csproj.AssemblyReference.cache
+C:\Users\carlos.esccavaletto\source\repos\TI46ProjetosConsole2\TI46ProjetosConsole2\obj\Debug\TI46ProjetosConsole2.csproj.CoreCompileInputs.cache
+C:\Users\carlos.esccavaletto\source\repos\TI46ProjetosConsole2\TI46ProjetosConsole2\bin\Debug\TI46ProjetosConsole2.exe.config
+C:\Users\carlos.esccavaletto\source\repos\TI46ProjetosConsole2\TI46ProjetosConsole2\bin\Debug\TI46ProjetosConsole2.exe
+C:\Users\carlos.esccavaletto\source\repos\TI46ProjetosConsole2\TI46ProjetosConsole2\bin\Debug\TI46ProjetosConsole2.pdb
+C:\Users\carlos.esccavaletto\source\repos\TI46ProjetosConsole2\TI46ProjetosConsole2\obj\Debug\TI46ProjetosConsole2.exe
+C:\Users\carlos.esccavaletto\source\repos\TI46ProjetosConsole2\TI46ProjetosConsole2\obj\Debug\TI46ProjetosConsole2.pdb
