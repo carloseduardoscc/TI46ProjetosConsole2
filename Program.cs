@@ -28,12 +28,15 @@ namespace TI46ProjetosConsole2
                         break;
 
                     case "2":
+                        Lista2.escolherExercicio();
                         break;
 
                     case "3":
+                        Lista3.escolherExercicio();
                         break;
 
                     case "4":
+                        Lista4.escolherExercicio();
                         break;
 
                     case "0":

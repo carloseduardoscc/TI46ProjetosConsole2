@@ -84,6 +84,11 @@ namespace TI46ProjetosConsole2
                         exercicio10();
                         break;
 
+                    case "11":
+                        Console.WriteLine("\nExercício 11");
+                        exercicio11();
+                        break;
+
                     case "0":
                         break;
 
@@ -96,8 +101,38 @@ namespace TI46ProjetosConsole2
             } while (input != "0");
         }
 
+        private static void exercicio11()
+        {
+            Console.Write("Que horas começou a partida? ");
+            int initHour = int.Parse(Console.ReadLine());
+            Console.Write("Que horas terminou a partida? ");
+            int endHour = int.Parse(Console.ReadLine());
+
+            int duration = (initHour < endHour ? endHour - initHour : (24 - initHour) + endHour);
+
+            Console.WriteLine(duration < 24 ? $"De {duration} horas no jogo restam {24 - duration} para terminar" : duration > 24 ? $"De {duration} horas de jogo excederam {24 - duration}" : "A partida já está no limite de 24 horas");
+
+        }
+
         private static void exercicio10()
         {
+            Console.WriteLine("Digite 3 números: ");
+            int[] nums = new int[3];
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                nums[i] = int.Parse(Console.ReadLine());
+            }
+
+            int maior = nums[0];
+
+            Array.Sort(nums);
+            Array.Reverse(nums);
+
+            foreach (var num in nums)
+            {
+                Console.Write(num + " ");
+            }
         }
 
         private static void exercicio9()
@@ -105,19 +140,18 @@ namespace TI46ProjetosConsole2
             Console.WriteLine("Digite 3 números: ");
             int[] nums = new int[3];
 
-            for (int i = 0; i <= nums.Length; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
                 nums[i] = int.Parse(Console.ReadLine());
             }
 
             int maior = nums[0];
 
+            Array.Sort(nums);
+
             foreach (var num in nums)
             {
-                if (num > maior)
-                {
-                    maior = num;
-                }
+                Console.Write(num + " ");
             }
         }
 
