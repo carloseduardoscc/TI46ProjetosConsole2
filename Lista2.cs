@@ -103,14 +103,47 @@ namespace TI46ProjetosConsole2
 
         private static void exercicio11()
         {
-            Console.Write("Que horas começou a partida? ");
+            //Console.Write("Que horas começou a partida? ");
+            //int initHour = int.Parse(Console.ReadLine());
+            //Console.Write("Que horas terminou a partida? ");
+            //int endHour = int.Parse(Console.ReadLine());
+            //
+            //int duration = (initHour < endHour ? endHour - initHour : (24 - initHour) + endHour);
+            //
+            //Console.WriteLine(duration < 24 ? $"De {duration} horas no jogo restam {24 - duration} para terminar" : duration > 24 ? $"De {duration} horas de jogo excederam {24 - duration}" : "A partida já está no limite de 24 horas");
+
+            Console.WriteLine("\n(versão adaptada para exceder horas)\nCOMEÇO DA PARTIDA:");
+            Console.Write("Dia: ");
+            int initDay = int.Parse(Console.ReadLine());
+            Console.Write("Horário: ");
             int initHour = int.Parse(Console.ReadLine());
-            Console.Write("Que horas terminou a partida? ");
+            Console.WriteLine("FIM DA PARTIDA:");
+            Console.Write("Dia: ");
+            int endDay = int.Parse(Console.ReadLine());
+            Console.Write("Horário: ");
             int endHour = int.Parse(Console.ReadLine());
+            
+            int daysDuration = endDay - initDay;
+            int duration = (initHour <= endHour ? endHour + (daysDuration * 24) - initHour : (24 - initHour) + endHour + (daysDuration * 24));
 
-            int duration = (initHour < endHour ? endHour - initHour : (24 - initHour) + endHour);
+            if (duration == 0)
+            {
+                Console.WriteLine("A partida acabou de começar!");
+            }
+            else if (duration > 24)
+            {
+                Console.WriteLine($"De {duration} horas de jogo excederam {duration - 24} do limite");
+            }
+            else if (duration < 24)
+            {
+                Console.WriteLine($"De {duration} horas no jogo restam {24 - duration} para terminar");
+            }
+            else
+            {
+                Console.WriteLine("A partida já está no limite de 24 horas!");
+            }
 
-            Console.WriteLine(duration < 24 ? $"De {duration} horas no jogo restam {24 - duration} para terminar" : duration > 24 ? $"De {duration} horas de jogo excederam {24 - duration}" : "A partida já está no limite de 24 horas");
+            //Console.WriteLine(duration < 24 ? $"De {duration} horas no jogo restam {24 - duration} para terminar" : duration > 24 ? $"De {duration} horas de jogo excederam {duration - 24} do limite" :  "A partida já está no limite de 24 horas");
 
         }
 
